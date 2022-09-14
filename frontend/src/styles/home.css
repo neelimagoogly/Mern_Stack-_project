@@ -304,13 +304,14 @@
     
   }
   
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
+    
     .hamburger {
       display: block;
     }
   
     .navigation-menu ul {
-      flex-direction: column;
+      flex-direction:column;
       position: absolute;
       top: 60px;
       left: 0;
@@ -339,6 +340,127 @@
     .navigation-menu.expanded ul {
       display: block;
     }
+    .stat{
+      text-align: center;
+      color: white;
+      background-color: green;
+      margin-top: 5rem;
+      margin-right: 0rem;
+      padding-left: 5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-size: 50px;
+      
+    } 
+    .stat h1{
+      margin-left: -5rem;
+    }
+    .boxesfarm1{
+      position: relative;
+    }
+    .boxesfarm2{
+      position: absolute;
+      margin-top: 22rem;
+    }
+    .boxesfarm3{
+      position: relative;
+      margin-bottom: 5rem;
+    }
+    .boxesfarm4{
+      position: relative;
+    }
+    .boxesfarm5{
+      position: absolute;
+      margin-top: 22rem;
+    }
+    .boxesfarm6{
+      position: relative;
+    }
+    .imgm{
+      margin-left: -1rem;
+    }
+    .para{
+      margin-top: -10rem;
+    }
+    
+    
+.card1 {
+  position: relative;
+  grid-area: card;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  display: block;
+  width: 110%;
+  margin-left: 5rem;
+  max-width: 500px;
+  height: 400px;
+  font-size: var(--fontOrigin);
+  border-radius: 8px;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-transition: all var(--speed) ease;
+  transition: all var(--speed) ease;
+}
+.card2 {
+  position: absolute;
+  grid-area: card;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  font-size: var(--fontOrigin);
+  border-radius: 8px;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-transition: all var(--speed) ease;
+  transition: all var(--speed) ease;
+}
+.card3 {
+  position: relative;
+  grid-area: card;
+  align-self: center;
+  justify-self: center;
+  margin-right:5rem ;
+  margin-left: 2rem;
+  overflow: hidden;
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  height: 400px;
+  font-size: var(--fontOrigin);
+  border-radius: 8px;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-transition: all var(--speed) ease;
+  transition: all var(--speed) ease;
+}
+.property-card
+{
+  position: relative;
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  color: darkgreen;
+  background-color: linear-gradient(green,wheat);
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
   }
 /* GLOBAL VARIABLES */
 :root {
@@ -825,7 +947,7 @@ body {
 }
 .test3{
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
   margin-top: 10rem;  
   font-size: large;
   color: darkgreen;
@@ -917,7 +1039,7 @@ body {
   margin-top: 5rem;
 }
 .vegfruitcontainer img{
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1231,6 +1353,48 @@ opacity:1;
 .button-71:hover {
   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
   transform: scale(1.05);
+
+}
+.button-7 {
+  background-color:lightgreen;
+  border: 0;
+  border-radius: 56px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 1rem;
+  margin-top: 7rem;
+}
+
+.button-7:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-7:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
 }
 .button-72 {
   background-color:lightgreen;
@@ -1277,7 +1441,7 @@ opacity:1;
 .button-73 {
   background-color:lightgreen;
   border: 0;
-  margin-left: -10rem;
+  
   border-radius: 56px;
   color:black;
   cursor: pointer;
@@ -1286,7 +1450,7 @@ opacity:1;
   font-size: 18px;
   font-weight: 600;
   outline: 0;
-  padding: 16px 21px;
+  padding: 16px 0px;
   position: relative;
   
   text-align: center;
@@ -1295,8 +1459,8 @@ opacity:1;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-left: 5rem;
-  margin-top: 4rem;
+  margin-left: 0rem;
+  /* margin-top: 4rem; */
 }
 
 .button-73:before {
@@ -1305,7 +1469,7 @@ opacity:1;
   border-radius: 125px;
   content: "";
   height: 50%;
-  left: 4%;
+  left: 40%;
   opacity: .5;
   position: absolute;
   top: 0;
@@ -1316,6 +1480,14 @@ opacity:1;
 .button-73:hover {
   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
   transform: scale(1.05);
+}
+.form-group{
+  color: black;
+  margin-left: 5rem;
+  
+}
+.form-group .form-control{
+  color: black;
 }
 @media (min-width: 768px) {
   .button-71 {
@@ -1672,4 +1844,50 @@ form button .fas {
 }
 .outerFarmDiv ::placeholder {
   color: red;
+}
+th,
+td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+.form-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  justify-content: space-evenly;
+}
+
+.input-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  background-color:lightgreen;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
 }

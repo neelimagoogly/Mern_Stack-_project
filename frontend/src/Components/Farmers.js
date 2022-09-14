@@ -33,7 +33,7 @@ export default function Farmers() {
           <img className="farmerimg" src={imgg}></img> 
           <div class="centered2"><p className="para">
             <h3>Sell your excess produce and products directly to Agrofam-</h3>
-            <button className="button1">SIGN UP FOR FREE →</button>
+            <Link to='/register'><button className="button1">SIGN UP FOR FREE →</button></Link>
             
           </p>
           </div>
@@ -68,13 +68,13 @@ export default function Farmers() {
           </div>
           
           </div>
-          <Link to='/letsconnect'><button class="button-71" role="button">Try Now</button></Link>
+          <Link to='/letsconnect'><button class="button-7" role="button">Try Now</button></Link>
           <div className="stat2">
             <h1>Less Emailing, More Selling</h1>
             <p>Showcase your produce with details and photos to speed up the sales process.</p>
           </div>
           
-           <img class="imgm" src={img5} />
+           {/* <img class="imgm" src={img5} /> */}
            <div className="stat3">
             <h1>The Agrofam marketplace is your sales channel for excess produce.</h1>
             

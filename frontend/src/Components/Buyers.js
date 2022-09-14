@@ -47,7 +47,7 @@ export default function Buyers() {
           </div>
           
           </div> 
-          <Link to="/productlist"><button class="button-71" role="button">Try Now</button></Link>
+          <Link to="/productlist"><button class="button-7" role="button">Try Now</button></Link>
           <div className="stat2">
             <h1>"Agrofam allows us to find the largest order for the best price. Being able to see that balance and selection on one screen is very helpful."</h1>
             <p>- Production Supply Manager, INDIA

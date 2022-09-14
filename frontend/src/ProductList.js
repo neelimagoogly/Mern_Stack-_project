@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import "../src/styles/home.css";
 import axios from 'axios';
 import Buyerloc from './Buyerloc';
 
@@ -8,11 +9,11 @@ const ProductSchema = props => (
         <td className={props.product.is_delete ? 'completed' : ''}>{props.product.name}</td>
         <td className={props.product.is_delete ? 'completed' : ''}>{props.product.desc}</td>
         <td className={props.product.is_delete ? 'completed' : ''}>{props.product.price}</td>
-        <td className={props.product.is_delete ? 'completed' : ''}>{props.product.image}</td>
-        <td className={props.product.is_delete ? 'completed' : ''}>{props.product.discount}</td>
+        {/* <td className={props.product.is_delete ? 'completed' : ''}>{props.product.image}</td> */}
+        {/* <td className={props.product.is_delete ? 'completed' : ''}>{props.product.discount}</td> */}
         <td>
             {/* <Link to='/orders'>Edit</Link> */}
-            <Link to="/orders"><button class="button-71" role="button">Try Now</button></Link>
+            <Link to="/orders"><button class="button-71" role="button">Order Now</button></Link>
         </td>
     </tr>
 )
@@ -78,11 +79,10 @@ export default class ProductList extends Component {
                 <table className="table table-striped" style={{ marginTop: 20 }}>
                     <thead>
                         <tr>
-                            <th>Description</th>
-                            <th>Responsible</th>
-                            <th>Priority</th>
-                            <th>Priorty</th>
-                            <th>Actions</th>
+                            <th>Seller</th>
+                            <th>Commodity</th>
+                            <th>Price(in ₹)</th>
+                            
                         </tr>
                     </thead>
                     <tbody>

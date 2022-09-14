@@ -53,7 +53,7 @@ Promotes operational efficiency and accuracy
           </div>
           
           </div>  
-          <Link to='/letsconnect'><button class="button-71" role="button">Try Now</button></Link>
+          <Link to='/letsconnect'><button class="button-7" role="button">Try Now</button></Link>
           
           <div className="stat2">
             <h1>
@@ -105,7 +105,7 @@ Agrofam is an end-to-end solution for efficiently sourcing sustainable produce.<
           </div>
           
           </div> 
-          <Link to='/letsconnect'><button class="button-71" role="button">Try Now</button></Link>
+          <Link to='/letsconnect'><button class="button-7" role="button">Try Now</button></Link>
           <div className="pcenter">For a complete list of all the commodities that Agrofam carries, sign up and check out our marketplace.</div> 
         <Footer></Footer>
         </div>

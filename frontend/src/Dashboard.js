@@ -233,7 +233,7 @@ export default class Dashboard extends Component {
         {this.state.loading && <LinearProgress size={40} />}
         <div>
           <h2>Dashboard</h2>
-          <Link to="/letsconnect"><button class="button-71" role="button">Fill your Details</button></Link>
+          <Link to="/letsconnect"><button class="button-7" role="button">Fill your Details</button></Link>
 
           <Button
             className="button_style"
@@ -244,7 +244,7 @@ export default class Dashboard extends Component {
           >
             Add a Commodity
           </Button>
-          <Link to="/productlist"><button class="button-71" role="button">Order a Commodity</button></Link>
+          <Link to="/productlist"><button class="button-7" role="button">Order a Commodity</button></Link>
           <Button
             className="button_style"
             variant="contained"
@@ -316,7 +316,7 @@ export default class Dashboard extends Component {
                 name="file"
                 value={this.state.file}
                 onChange={this.onChange}
-                id="fileInput"
+                // id="fileInput"
                 placeholder="File"
                 hidden
               />
@@ -399,7 +399,7 @@ export default class Dashboard extends Component {
                 name="file"
                 value={this.state.file}
                 onChange={this.onChange}
-                id="fileInput"
+                // id="fileInput"
                 placeholder="File"
                 hidden
                 required

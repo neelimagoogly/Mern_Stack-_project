@@ -28,7 +28,7 @@ const Footer = () => {
   	 				<li><a href="/about">Blog</a></li>
   	 				<li><a href="/buyers">FAQ</a></li>
   	 				<li><a href="/farmers">Media</a></li>
-  	 				<li><a href="/dataLogistics">Contact Us</a></li>
+  	 				<li><a href="/contactus">Contact Us</a></li>
   	 			</ul>
   	 		</div>
          <img src={logo2} width='200px' alt="" />

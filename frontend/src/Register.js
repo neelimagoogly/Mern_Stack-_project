@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
 import { Button, TextField, Link } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 const axios = require('axios');
 
 export default class Register extends React.Component {
@@ -46,9 +47,25 @@ export default class Register extends React.Component {
 
   render() {
     return (
-      <div style={{ marginTop: '100px' }}>
+      <div style={{ marginTop: '50px' }}>
+        <div style={{ marginLeft: '35%', marginTop: '60px', width: '30%' }}>
+    <Box color="white" bgcolor="green" p={1}>
+      Instructions for Login/Register
+      <p>
+        <ol>
+          <li>If you are new to Agrofam click on Register to create your Account.</li>
+          <li>If you have already registered then click on login in.</li>
+          <li>After logging into the Dashboard click on the "Fill your Details" Button and then fill the desired form.</li>
+          <li>After submitting the form,go back.</li>
+          <li>If you are a seller/farmer click on the "Add Commodity" button and add the Commodity you want to sell.</li>
+          <li>Or if you are a Buyer the click on the "Order" Button.</li>
+          <li>Besides the desired commodity click on "Order Now" button and fill the form to place order.</li>
+        </ol>
+      </p>
+    </Box>
+    </div>
         <div>
-          <h2>Register as A Farmer/Supplier</h2>
+          <h2>Register</h2>
         </div>
 
         <div>

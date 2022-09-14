@@ -8,7 +8,7 @@ export default class Buyerloc extends Component {
 
         this.onChangeTodoDescription = this.onChangeTodoDescription.bind(this);
         this.onChangeTodoResponsible = this.onChangeTodoResponsible.bind(this);
-        this.onChangeTodoPriority = this.onChangeTodoPriority.bind(this);
+      
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
@@ -31,11 +31,6 @@ export default class Buyerloc extends Component {
         });
     }
 
-    onChangeTodoPriority(e) {
-        this.setState({
-            todo_priority: e.target.value
-        });
-    }
 
     onSubmit(e) {
         e.preventDefault();
@@ -49,7 +44,7 @@ export default class Buyerloc extends Component {
         const newTodo = {
             todo_description: this.state.todo_description,
             todo_responsible: this.state.todo_responsible,
-            todo_priority: this.state.todo_priority,
+            
             todo_completed: this.state.todo_completed
         }
 
@@ -59,67 +54,51 @@ export default class Buyerloc extends Component {
         this.setState({
             todo_description: '',
             todo_responsible: '',
-            todo_priority: '',
+            
             todo_completed: false
         })
     }
 
     render() {
         return (
-            <div style={{marginTop: 20}}>
+            
+            <div style={{marginTop: 120}}>
                 <h3>Order Details</h3>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} className="form-container">
                     <div className="form-group">
-                        <label>Description: </label>
+                        <label>Your username: </label>
                         <input  type="text"
-                                className="form-control"
+                                className="input-text"
                                 value={this.state.todo_description}
                                 onChange={this.onChangeTodoDescription}
                                 />
                     </div>
                     <div className="form-group">
-                        <label>Responsible: </label>
+                        <label>Your Address: </label>
                         <input  type="text"
-                                className="form-control"
+                                className="input-text"
                                 value={this.state.todo_responsible}
                                 onChange={this.onChangeTodoResponsible}
                                 />
                     </div>
                     <div className="form-group">
-                        <div className="form-check form-check-inline">
-                            <input  className="form-check-input"
-                                    type="radio"
-                                    name="priorityOptions"
-                                    id="priorityLow"
-                                    value="Low"
-                                    checked={this.state.todo_priority==='Low'}
-                                    onChange={this.onChangeTodoPriority}
-                                    />
-                            <label className="form-check-label">Low</label>
-                        </div>
-                        <div className="form-check form-check-inline">
-                            <input  className="form-check-input"
-                                    type="radio"
-                                    name="priorityOptions"
-                                    id="priorityMedium"
-                                    value="Medium"
-                                    checked={this.state.todo_priority==='Medium'}
-                                    onChange={this.onChangeTodoPriority}
-                                    />
-                            <label className="form-check-label">Medium</label>
-                        </div>
-                        <div className="form-check form-check-inline">
-                            <input  className="form-check-input"
-                                    type="radio"
-                                    name="priorityOptions"
-                                    id="priorityHigh"
-                                    value="High"
-                                    checked={this.state.todo_priority==='High'}
-                                    onChange={this.onChangeTodoPriority}
-                                    />
-                            <label className="form-check-label">High</label>
-                        </div>
+                        <label>Seller's name: </label>
+                        <input  type="text"
+                                className="input-text"
+                                value={this.state.todo_description}
+                                onChange={this.onChangeTodoDescription}
+                                />
                     </div>
+
+                    <div className="form-group">
+                        <label>Commodity: </label>
+                        <input  type="text"
+                                className="input-text"
+                                value={this.state.todo_description}
+                                onChange={this.onChangeTodoDescription}
+                                />
+                    </div>
+                    
                     <div className="form-group">
                         <input type="submit" value="Submit" className="button-73" />
                     </div>

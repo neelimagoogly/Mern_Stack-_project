@@ -10,6 +10,7 @@ import Farmers from "./Components/Farmers";
 import Logistics from "./Components/Logistics";
 import Letsconnect from "./Components/Letsconnect";
 import GetStarted from "./Components/GetStarted";
+import Contactus from './Components/Contactus';
 
 
 import Project1 from "./Components/Project1";
@@ -38,6 +39,7 @@ ReactDOM.render(
             <Route exact path='/buyers' component={Buyers} />
             <Route exact path='/farmers' component={Farmers} />
             <Route exact path='/logistics' component={Logistics} />
+            <Route exact path='/contactus' component={Contactus} />
             <Route exact path='/letsconnect' component={Letsconnect} />
             <Route exact path='/productlist' component={ProductList} />
             <Route exact path='/getstarted' component={GetStarted} />
