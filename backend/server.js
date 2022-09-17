@@ -3,6 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var cors = require('cors');
 const orderRoutes = express.Router();
+require("dotenv").config();
 
 const form2Routes = express.Router();
 const form1Routes = express.Router();
@@ -801,6 +802,6 @@ app.get("/get-product", (req, res) => {
 // });
 
 
-app.listen(2000, () => {
+app.listen(process.env.PORT || 2000, () => {
   console.log("Server is Runing On port 2000");
 });
